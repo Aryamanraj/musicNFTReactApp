@@ -1,0 +1,56 @@
+/* Styling for the card background */
+.dashboard-container {
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      height: 100%;
+      width: 100%;
+    }
+    
+    /* Styling for the profile picture */
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    
+    /* Styling for the about, wallet address, and links */
+    .dashboard-about,
+    .dashboard-wallet,
+    .dashboard-links {
+      flex: 1;
+      margin-right: 2px;
+    }
+    
+    /* Styling for the list headers */
+    .dashboard-about h2,
+    .dashboard-wallet h2,
+    .dashboard-links h2 {
+      margin-top: 0;
+    }
+    
+    /* Styling for the list items */
+    .dashboard-about p,
+    .dashboard-wallet p,
+    .dashboard-links p {
+      margin-top: 0;
+    }
+    
+    /* Styling for the page layout */
+    .pager {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+    } 
+    
+    .login-page {
+      width: auto;
+    }
+    
+    .dashboard-title {
+      text-align: center;
+    }
+    
