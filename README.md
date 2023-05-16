@@ -1,6 +1,6 @@
 ## Code Execution
 #### Clip:
-![Working GIF](https://github.com/Aryamanraj/musicNFTReactApp/blob/master/working_clip.gif)
+![Working GIF](https://github.com/Aryamanraj/musicNFTReactApp/blob/master/Working_clip.gif)
 
 # Musician Profile and NFT Minting Platform
 
