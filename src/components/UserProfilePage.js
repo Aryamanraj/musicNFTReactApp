@@ -1,40 +1,37 @@
-import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 //import './UserProfilePage.css'; // Import the CSS file
 
 const UserProfilePage = () => {
-  const location = useLocation();
-  const queryParams = new URLSearchParams(location.search);
 
-  const about = queryParams.get('about');
-  const walletAddress = queryParams.get('walletAddress');
-  const socialMediaLinks = queryParams.get('socialMediaLinks');
-  const profilePicture = queryParams.get('profilePicture');
-  const background = queryParams.get('background');
+  //retrieving information from local storage
+  const about = localStorage.getItem("about");
+  const walletAddress = localStorage.getItem("walletAddress");
+  const socialMediaLinks = localStorage.getItem("socialMediaLinks");
+  const profilePicture = localStorage.getItem("profilePicture");
+  const background = localStorage.getItem("background");
+  
   const sectionStyle = {
     background: `url(https://ipfs.io/ipfs/${background}) no-repeat center center fixed`,
-    backgroundSize: 'cover',
+    backgroundSize: "cover",
   };
   const sectionStyle1 = {
-      "width": "150px",
-      "height": "150px",
-      "object-fit": "cover",
-      "border-radius": "50%"
-    }
-    const navigate = useNavigate();
+    width: "150px",
+    height: "150px",
+    "object-fit": "cover",
+    "border-radius": "50%",
+  };
+  const navigate = useNavigate();
 
-    const handleAddMusic = () => {
-      navigate(`/add-music?walletAddress=${walletAddress}`);}
-  
-  
-
+  const handleAddMusic = () => {
+    navigate(`/add-music`);
+  };
 
   return (
-    <div className='pager'>
-      
+    <div className="pager">
       <h1 className="dashboard-title">User Profile</h1>
-      <div className='login-page'>
-      <div style={sectionStyle}>
+      <div className="login-page">
+        <div style={sectionStyle}>
           <div className="dashboard-about">
             <h2>About</h2>
             <p>{about}</p>
@@ -56,9 +53,9 @@ const UserProfilePage = () => {
             />
           </div>
         </div>
-        </div>
-        <button onClick={handleAddMusic}>Add Music</button>
       </div>
+      <button onClick={handleAddMusic}>Add Music</button>
+    </div>
   );
 };
 
