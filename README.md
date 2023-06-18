@@ -35,17 +35,17 @@ The musician profile and NFT minting platform consist of three main pages:
 To install and set up the project, follow these steps:
 
 1. Clone the project repository from GitHub:
-   ```
-   git clone <repository-url>
+   ```shell
+   git clone https://github.com/Aryamanraj/musicNFTReactApp.git
    ```
 
 2. Navigate to the project directory:
-   ```
-   cd musician-profile-nft-platform
+   ```shell
+   cd musicNFTReactApp
    ```
 
 3. Install the required dependencies:
-   ```
+   ```shell
    npm install
    ```
 
@@ -60,7 +60,7 @@ To install and set up the project, follow these steps:
 To use the musician profile and NFT minting platform, follow these steps:
 
 1. Start the project:
-   ```
+   ```shell
    npm start
    ```
 
@@ -83,5 +83,12 @@ To use the musician profile and NFT minting platform, follow these steps:
    - Mint the NFT using the provided music metadata.
    - View the total number of minted NFTs and details about the last minted NFT.
 
+## License
 
-Feel free to modify the content or structure of the README to suit your project's needs.
+The Music NFT React App is licensed under the [MIT License](LICENSE). Feel free to modify and distribute the game as per the terms of the license.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/Aryamanraj/musicNFTReactApp).
+
+When contributing to the Music NFT React App, please ensure that your code follows the existing coding style and conventions. Provide clear and concise explanations of the changes you've made and test your modifications thoroughly.
